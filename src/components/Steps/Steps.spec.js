@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Steps from './index'
+import { Steps } from './index'
 
 describe('Steps container', () => {
   const props = {

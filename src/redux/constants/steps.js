@@ -1,0 +1,1 @@
+export const SET_CURRENT_STEP = 'steps/SET_CURRENT_STEP';

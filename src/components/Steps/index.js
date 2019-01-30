@@ -1,11 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux';
+import * as actions from '../../redux/actions/steps';
+
 import Step from './Step'
 
-const Steps = (props) => {
+export const Steps = (props) => {
 
   const isActive = (index) => Math.abs(index - props.current) === 1
 
   const handleClick = (index) => {
+    console.log(index);
     if (isActive(index)) {
       props.handleClick(index)
     }
@@ -19,7 +23,7 @@ const Steps = (props) => {
       console.warn("In Steps component must be more than 2 and max 5 steps");
       return null;
     }
-    if (stepLengtn > 2) {
+    if (stepLengtn > 5) {
       console.warn("In Steps component must be max 5 steps");
     }
 
@@ -50,4 +54,12 @@ const Steps = (props) => {
   )
 }
 
-export default Steps
+const mapStateToProps = state => ({
+  current: state.steps.current,
+});
+
+const mapDispatchToProps = {
+  handleClick: actions.setCurrentStep,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Steps)
