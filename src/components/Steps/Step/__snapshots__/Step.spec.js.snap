@@ -21,12 +21,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <ForwardRef>
+      "children": Array [
         <ForwardRef
           htmlFor=""
         >
           
-        </ForwardRef>
+        </ForwardRef>,
         <ForwardRef>
           <ForwardRef
             disabled={true}
@@ -34,11 +34,227 @@ ShallowWrapper {
             onClick={[Function]}
             type="button"
           />
-        </ForwardRef>
-      </ForwardRef>,
+        </ForwardRef>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "active": undefined,
+          "checked": undefined,
+          "children": "",
+          "current": undefined,
+          "htmlFor": "",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "rules": Array [
+              "
+    display: block;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    transition: color 0.1s;
+
+    ",
+              [Function],
+              "
+  ",
+            ],
+          },
+          "displayName": "Label",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "checked": undefined,
+          "children": <ForwardRef
+            disabled={true}
+            id=""
+            onClick={[Function]}
+            type="button"
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "active": undefined,
+            "current": undefined,
+            "disabled": true,
+            "id": "",
+            "isChecked": undefined,
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": false,
+              "rules": Array [
+                "
+    width: ",
+                "40px",
+                ";
+    height: ",
+                "40px",
+                ";
+    border: 10px solid ",
+                [Function],
+                ";
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    cursor: ",
+                [Function],
+                ";
+    transition: transform 0.3s;
+    transition: border 0.1s;
+
+    ",
+                [Function],
+                "
+  ",
+                [Function],
+                "
+  }
+    &:focus {
+      outline: none;
+      transform: scale(1.2);
+    }
+  ",
+              ],
+            },
+            "displayName": "Button",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "rules": Array [
+              "
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 8px;
+      width: 100%;
+      background-color: ",
+              [Function],
+              ";
+      display: block;
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      z-index: -1;
+      background: linear-gradient(to right, ",
+              [Function],
+              ");
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: background-position 0.2s ease 0.1s;
+      
+      ",
+              [Function],
+              "
+    }
+  ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bwzfXH",
+        "isStatic": true,
+        "rules": Array [
+          "
+    flex: 1;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+
+    &:last-child {
+      ",
+          ".sc-bdVaJa",
+          ": {
+        &:after {
+          width: 0;
+        }
+        &:after {
+          width: 0;
+        }
+      }
+    }
+  ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bwzfXH",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
@@ -66,7 +282,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "active": undefined,
+            "checked": undefined,
             "children": "",
+            "current": undefined,
             "htmlFor": "",
           },
           "ref": null,
@@ -75,24 +294,32 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
-              "isStatic": true,
+              "componentId": "sc-htpNat",
+              "isStatic": false,
               "rules": Array [
                 "
     display: block;
     padding-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: ",
-                "#DBDBDB",
+    cursor: ",
+                [Function],
                 ";
+    color: ",
+                [Function],
+                ";
+    transition: color 0.1s;
+
+    ",
+                [Function],
+                "
   ",
               ],
             },
             "displayName": "Label",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bxivhb",
+            "styledComponentId": "sc-htpNat",
             "target": "label",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -104,6 +331,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "checked": undefined,
             "children": <ForwardRef
               disabled={true}
               id=""
@@ -117,8 +345,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "active": undefined,
+              "current": undefined,
               "disabled": true,
               "id": "",
+              "isChecked": undefined,
               "onClick": [Function],
               "type": "button",
             },
@@ -128,29 +359,47 @@ ShallowWrapper {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-ifAKCX",
-                "isStatic": true,
+                "componentId": "sc-bxivhb",
+                "isStatic": false,
                 "rules": Array [
                   "
-    width: 40px;
-    height: 40px;
+    width: ",
+                  "40px",
+                  ";
+    height: ",
+                  "40px",
+                  ";
     border: 10px solid ",
-                  "#DBDBDB",
+                  [Function],
                   ";
     border-radius: 50%;
     padding: 0;
     margin: 0;
     background-color: #fff;
     cursor: ",
-                  "default",
+                  [Function],
                   ";
+    transition: transform 0.3s;
+    transition: border 0.1s;
+
+    ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+  }
+    &:focus {
+      outline: none;
+      transform: scale(1.2);
+    }
   ",
                 ],
               },
               "displayName": "Button",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-ifAKCX",
+              "styledComponentId": "sc-bxivhb",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -162,7 +411,7 @@ ShallowWrapper {
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-bdVaJa",
-              "isStatic": true,
+              "isStatic": false,
               "rules": Array [
                 "
     position: relative;
@@ -170,15 +419,25 @@ ShallowWrapper {
     &:after {
       content: '';
       height: 8px;
-      width: 9999px;
+      width: 100%;
       background-color: ",
-                "#DBDBDB",
+                [Function],
                 ";
       display: block;
       position: absolute;
       top: 16px;
       left: 50%;
       z-index: -1;
+      background: linear-gradient(to right, ",
+                [Function],
+                ");
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: background-position 0.2s ease 0.1s;
+      
+      ",
+                [Function],
+                "
     }
   ",
               ],
@@ -198,277 +457,24 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
-          "isStatic": true,
-          "rules": Array [
-            "
-    display: inline-block;
-    text-align: center;
-  ",
-          ],
-        },
-        "displayName": "styled.div",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-htpNat",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-    },
-    "type": Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
-        "isStatic": true,
-        "rules": Array [
-          "
-    flex: 1;
-
-    &:last-child {
-      flex: none;
-      ",
-          ".sc-bdVaJa",
-          ": {
-        &:after {
-          background: #fff;
-        }
-      }
-    }
-  ",
-        ],
-      },
-      "displayName": "styled.div",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    },
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <ForwardRef>
-          <ForwardRef
-            htmlFor=""
-          >
-            
-          </ForwardRef>
-          <ForwardRef>
-            <ForwardRef
-              disabled={true}
-              id=""
-              onClick={[Function]}
-              type="button"
-            />
-          </ForwardRef>
-        </ForwardRef>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [
-            <ForwardRef
-              htmlFor=""
-            >
-              
-            </ForwardRef>,
-            <ForwardRef>
-              <ForwardRef
-                disabled={true}
-                id=""
-                onClick={[Function]}
-                type="button"
-              />
-            </ForwardRef>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "",
-              "htmlFor": "",
-            },
-            "ref": null,
-            "rendered": "",
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bxivhb",
-                "isStatic": true,
-                "rules": Array [
-                  "
-    display: block;
-    padding-bottom: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    color: ",
-                  "#DBDBDB",
-                  ";
-  ",
-                ],
-              },
-              "displayName": "Label",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bxivhb",
-              "target": "label",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            },
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": <ForwardRef
-                disabled={true}
-                id=""
-                onClick={[Function]}
-                type="button"
-              />,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "disabled": true,
-                "id": "",
-                "onClick": [Function],
-                "type": "button",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-ifAKCX",
-                  "isStatic": true,
-                  "rules": Array [
-                    "
-    width: 40px;
-    height: 40px;
-    border: 10px solid ",
-                    "#DBDBDB",
-                    ";
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    cursor: ",
-                    "default",
-                    ";
-  ",
-                  ],
-                },
-                "displayName": "Button",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-ifAKCX",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              },
-            },
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": true,
-                "rules": Array [
-                  "
-    position: relative;
-
-    &:after {
-      content: '';
-      height: 8px;
-      width: 9999px;
-      background-color: ",
-                  "#DBDBDB",
-                  ";
-      display: block;
-      position: absolute;
-      top: 16px;
-      left: 50%;
-      z-index: -1;
-    }
-  ",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            },
-          },
-        ],
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": true,
-            "rules": Array [
-              "
-    display: inline-block;
-    text-align: center;
-  ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-      },
-      "type": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
           "componentId": "sc-bwzfXH",
           "isStatic": true,
           "rules": Array [
             "
     flex: 1;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
 
     &:last-child {
-      flex: none;
       ",
             ".sc-bdVaJa",
             ": {
         &:after {
-          background: #fff;
+          width: 0;
+        }
+        &:after {
+          width: 0;
         }
       }
     }

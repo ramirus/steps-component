@@ -5,9 +5,12 @@ import * as actions from '../../redux/actions/steps';
 
 import Step from './Step'
 
-const Container = styled.div`
+const StepsContainer = styled.div`
   display: flex;
   padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
 `;
 
 export const Steps = (props) => {
@@ -53,9 +56,9 @@ export const Steps = (props) => {
 
 
   return (
-    <Container>
+    <StepsContainer>
       {renderChildren()}
-    </Container>
+    </StepsContainer>
   )
 }
 

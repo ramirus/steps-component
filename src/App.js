@@ -11,6 +11,12 @@ const steps = [
   {
     label: 'Launch',
   },
+  {
+    label: 'Launchf2',
+  },
+  {
+    label: 'Launchf34f3ggg',
+  },
 ]
 
 class App extends Component {
