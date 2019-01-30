@@ -3,11 +3,11 @@ import Step from './Step'
 
 const Steps = (props) => {
 
-  const isActive = (index) => Math.abs(index - props.current)
+  const isActive = (index) => Math.abs(index - props.current) === 1
 
   const handleClick = (index) => {
     if (isActive(index)) {
-      this.props.handleClick(index)
+      props.handleClick(index)
     }
   }
 
@@ -24,12 +24,13 @@ const Steps = (props) => {
     }
 
     const result = [];
-    
+
     for (let i = 0; i < stepLengtn && i < 5; i++) {
       result.push(
         <Step
           key={steps[i].label}
           title={steps[i].label}
+          index={i}
           handleClick={handleClick}
           current={current === i}
           active={isActive(i)}
@@ -40,11 +41,11 @@ const Steps = (props) => {
 
     return result;
   }
-  
+
 
   return (
     <div>
-      { renderChildren() }
+      {renderChildren()}
     </div>
   )
 }

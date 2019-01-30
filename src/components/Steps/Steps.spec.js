@@ -14,7 +14,7 @@ describe('Steps container', () => {
     it('renders properly', () => {
       expect(steps).toMatchSnapshot()
     })
-  
+
     it('not render <Step /> if "steps" prop is empty', () => {
       expect(steps.find('Step')).toHaveLength(0)
     })
@@ -60,7 +60,7 @@ describe('Steps container', () => {
     })
   })
 
-  describe('Max steps props length in  Steps container', () => {
+  describe('Max steps props length in Steps container', () => {
     const nextProps = {
       ...props,
       steps: [
@@ -82,13 +82,51 @@ describe('Steps container', () => {
         {
           label: 'Launch 3',
         },
-      ]
+      ],
     }
 
     const steps = shallow(<Steps {...nextProps} />)
 
     it('If steps props length > 5 Steps container render only 5 <Step /> components', () => {
       expect(steps.find('Step')).toHaveLength(5)
+    })
+  })
+
+  describe('Click logic in Steps', () => {
+    const mockHandleClick = jest.fn();
+
+    const nextProps = {
+      ...props,
+      steps: [
+        {
+          label: 'Design',
+        },
+        {
+          label: 'Build',
+        },
+        {
+          label: 'Launch',
+        },
+      ],
+      handleClick: mockHandleClick,
+    }
+
+    const steps = shallow(<Steps {...nextProps} />)
+    const firstStep = steps.find('Step').first().getElement().props;
+
+    it('Click on current step will not fire handleClick prop', () => {
+      firstStep.handleClick(nextProps.current)
+      expect(mockHandleClick).toHaveBeenCalledTimes(0)
+    })
+
+    it('Click on step over a step will not fire handleClick prop', () => {
+      firstStep.handleClick(nextProps.current + 2)
+      expect(mockHandleClick).toHaveBeenCalledTimes(0)
+    })
+
+    it('Click on next step will fire handleClick prop', () => {
+      firstStep.handleClick(nextProps.current + 1)
+      expect(mockHandleClick).toHaveBeenCalledTimes(1)
     })
   })
 })
