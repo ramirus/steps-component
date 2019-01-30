@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+
 import Step from './index'
 
 describe('Step component', () => {
@@ -26,7 +27,7 @@ describe('Step component', () => {
     const step = shallow(<Step {...nextProps} />)
 
     it('renders label', () => {
-      expect(step.find('label')).toHaveLength(1)
+      expect(step.find('Label')).toHaveLength(1)
     })
 
     it('renders icon button', () => {

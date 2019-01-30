@@ -1,15 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import * as actions from '../../redux/actions/steps';
 
 import Step from './Step'
+
+const Container = styled.div`
+  display: flex;
+  padding: 10px;
+`;
 
 export const Steps = (props) => {
 
   const isActive = (index) => Math.abs(index - props.current) === 1
 
   const handleClick = (index) => {
-    console.log(index);
     if (isActive(index)) {
       props.handleClick(index)
     }
@@ -48,9 +53,9 @@ export const Steps = (props) => {
 
 
   return (
-    <div>
+    <Container>
       {renderChildren()}
-    </div>
+    </Container>
   )
 }
 
