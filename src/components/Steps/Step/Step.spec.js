@@ -5,7 +5,7 @@ import Step from './index'
 describe('Step component', () => {
   const props = {
     title: '',
-    clickHandle: () => {},
+    handleClick: () => { },
   }
 
   describe('Step component initial', () => {
@@ -21,7 +21,7 @@ describe('Step component', () => {
 
     const nextProps = {
       title: 'Test',
-      clickHandle: mockClickHandle,
+      handleClick: mockClickHandle,
     }
     const step = shallow(<Step {...nextProps} />)
 
@@ -35,7 +35,7 @@ describe('Step component', () => {
 
     describe('when clicking the icon button', () => {
       step.find('input[type="button"]').simulate('click', {
-        preventDefault: () => {},
+        preventDefault: () => { },
       })
 
       it('calls the props.clickHandle', () => {
