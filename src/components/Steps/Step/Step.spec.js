@@ -31,11 +31,11 @@ describe('Step component', () => {
     })
 
     it('renders icon button', () => {
-      expect(step.find('input[type="button"]')).toHaveLength(1)
+      expect(step.find('Button')).toHaveLength(1)
     })
 
     describe('when clicking the icon button', () => {
-      step.find('input[type="button"]').simulate('click', {
+      step.find('Button').simulate('click', {
         preventDefault: () => { },
       })
 

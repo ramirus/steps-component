@@ -50,6 +50,7 @@ const Step = (props) => {
     font-weight: bold;
     color: ${props.checked || props.current ? tp.activeColor : tp.secondColor};
   `
+  Label.displayName = 'Label'
 
   const Button = styled.input`
     width: 40px;
@@ -61,6 +62,7 @@ const Step = (props) => {
     background-color: #fff;
     cursor: ${props.active ? 'pointer' : 'default'};
   `
+  Button.displayName = 'Button'
 
   const handleClick = (e) => {
     e.preventDefault();
