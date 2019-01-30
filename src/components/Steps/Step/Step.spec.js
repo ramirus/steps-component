@@ -15,4 +15,32 @@ describe('Step component', () => {
       expect(step).toMatchSnapshot()
     })
   })
+
+  describe('Step component with props', () => {
+    const mockClickHandle = jest.fn();
+
+    const nextProps = {
+      title: 'Test',
+      clickHandle: mockClickHandle,
+    }
+    const step = shallow(<Step {...nextProps} />)
+
+    it('renders label', () => {
+      expect(step.find('label')).toHaveLength(1)
+    })
+
+    it('renders icon button', () => {
+      expect(step.find('input[type="button"]')).toHaveLength(1)
+    })
+
+    describe('when clicking the icon button', () => {
+      step.find('input[type="button"]').simulate('click', {
+        preventDefault: () => {},
+      })
+
+      it('calls the props.clickHandle', () => {
+        expect(mockClickHandle).toHaveBeenCalledTimes(1)
+      })
+    })
+  })
 })
